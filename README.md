@@ -1,6 +1,6 @@
 # francollective_repo
 ## Repository Description 💡
-Francollective repository for the front end
+Francollective Repository for the front end
 
 ## Technologies used 🔥
 - Tailwind
