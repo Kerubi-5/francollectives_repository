@@ -18,8 +18,10 @@
 
 <body class="dark font-intro">
     <header class="dark:bg-darkContainer dark:text-gray-400 py-5 fixed top-0 z-50 w-full">
-        <nav class="container mx-auto md:flex md:justify-between px-2">
-            <a class="" href="/">Logo</a>
+        <nav class="container mx-auto md:flex md:justify-between px-4">
+            <a class="" href="/">
+                <img class="w-44" src="./assets/francollective_multicolor.png" alt="Francollective Logo">
+            </a>
 
             <ul id="menu" class="hidden md:flex flex-col gap-5 uppercase mt-5 md:flex-row md:mt-0">
                 <li><a href="/manifesto">Manifesto</a></li>
@@ -27,7 +29,7 @@
                 <li><a href="/story">Our story</a></li>
             </ul>
         </nav>
-        <div id="toggleMobile" class="absolute top-4 right-2 text-2xl md:hidden">
+        <div id="toggleMobile" class="absolute top-4 right-2 text-2xl md:hidden cursor-pointer">
             <i class='bx bx-menu'></i>
         </div>
     </header>
@@ -37,7 +39,7 @@
                 <h1 class="text-2xl md:text-4xl text-alt mb-2 uppercase whitespace-nowrap">
                     Show your true colors
                 </h1>
-                <img class="mx-auto pt-5 w-24 md:w-32" src="./franc_logo.png" alt="Francollectives Logo">
+                <img id="mainLogo" class="mx-auto pt-5 w-24 md:w-32" src="./franc_logo.png" alt="Francollectives Logo">
             </div>
         </div>
         <div
@@ -92,7 +94,6 @@
             $("#toggleMobile").empty().append(`<i class="bx bx-x"></i>`)
         else
             $("#toggleMobile").empty().append(`<i class='bx bx-menu'></i>`)
-
     })
 </script>
 
