@@ -37,13 +37,84 @@
     <div class="bg-body dark:bg-darkBody pt-10 h-screen relative">
         <div class="mb-5 text-center h-screen relative">
             <div class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <h1 class="text-2xl md:text-4xl text-alt mb-2 uppercase whitespace-nowrap">
-                    Show your true colors
-                </h1>
-                <img id="mainLogo" class="mx-auto pt-5 w-24 md:w-32" src="./assets/franc_logo.png"
-                    alt="Francollectives Logo">
+
+                <!-- TODO: tagline on hover -->
+                <div class="group"> 
+                    <div class="flex flex-row gap-1 text-justify whitespace-nowrap uppercase text-2xl md:text-7xl font-bold text-alt mb-2">
+                        <p class="group-hover:text-emerald-400"> S </p>
+                        <p class="group-hover:text-pink-400"> h </p>
+                        <p class="group-hover:text-amber-500"> o </p>
+                        <p class="group-hover:text-purple-700 mr-5"> w </p>
+                        <p class="group-hover:text-green-400"> y </p>
+                        <p class="group-hover:text-red-600"> o </p>
+                        <p class="group-hover:text-cyan-300"> u </p>
+                        <p class="group-hover:text-pink-300 mr-5"> r </p>
+                        <p class="group-hover:text-cyan-500"> t </p>
+                        <p class="group-hover:text-green-600"> r </p>
+                        <p class="group-hover:text-yellow-300"> u </p>
+                        <p class="group-hover:text-emerald-400 mr-5"> e </p>
+                        <p class="group-hover:text-pink-400"> c </p>
+                        <p class="group-hover:text-amber-500"> o </p>
+                        <p class="group-hover:text-purple-700"> l </p>
+                        <p class="group-hover:text-green-400"> o </p>
+                        <p class="group-hover:text-red-600"> r  </p>
+                        <p class="group-hover:text-cyan-300"> s </p>
+                    </div>
+
+                    <div class="relative mx-auto pt-5 w-24 md:w-32">
+                        <!-- image before hover -->
+                          <img class="absolute opacity-100 group-hover:opacity-0" src="./assets/franc_logo_hover.png" alt="Francollectives Logo">
+        
+                        <!-- image on hover -->
+                          <img class="absolute opacity-0 group-hover:opacity-100" src="./assets/franc_logo.png" alt="Francollectives Logo">
+                    </div>
+                </div>
+
+
+
+                <!-- <img class="mx-auto pt-5 w-24 md:w-32" src="./assets/franc_logo.png" alt="Francollectives Logo"> -->
+
+                
+
             </div>
+
         </div>
+        <div
+            class="bg-container dark:bg-darkContainer dark:text-zinc-100 max-w-sm rounded-md shadow-md shadow-alt dark:shadow-yellow-50 h-fit mx-auto p-5">
+            <h2 class="text-3xl dark:text-zinc-50">
+                What is Lorem Ipsum?
+            </h2>
+            <p class="text-slate-500 dark:text-gray-400">
+                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularized in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum
+            </p>
+        </div>
+        <div class="grid justify-center align-middle">
+            <button class="p-4 rounded-md m-5 bg-primary dark:bg-white" id="click">Toggle Mode</button>
+        </div>
+
+        <!-- 
+        sm	640px	@media (min-width: 640px) { ... }
+        md	768px	@media (min-width: 768px) { ... }
+        lg	1024px	@media (min-width: 1024px) { ... }
+        xl	1280px	@media (min-width: 1280px) { ... }
+        2xl	1536px	@media (min-width: 1536px) { ... }
+        -->
+
+        <!-- <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+            <img class="mx-auto pt-5" src="./franc_logo.png" alt="Francollectives Logo" width="128">
+        </div> -->
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
