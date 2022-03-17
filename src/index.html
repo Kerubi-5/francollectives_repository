@@ -17,20 +17,24 @@
 </style>
 
 <body class="dark font-intro">
-    <header class="bg-container text-gray-500 dark:bg-darkContainer dark:text-gray-400 py-5 fixed top-0 z-50 w-full">
-        <nav class="container mx-auto md:flex md:justify-between px-2 items-center">
+    <header class="bg-container text-gray-500 dark:bg-darkContainer dark:text-gray-400 fixed top-0 z-50 w-full">
+        <nav class="container mx-auto md:flex md:justify-between items-center">
             <a class="w-44" href="/">
                 <img class="w-44 object-cover" src="./assets/francollective_multicolor.png" alt="Francollective Logo">
             </a>
 
-            <ul id="menu" class="hidden md:flex flex-col gap-10 py-6 px-4 uppercase mt-5 md:flex-row md:mt-0">
+            <ul id="menu"
+                class="hidden items-center md:flex flex-col gap-10 py-6 px-4 uppercase mt-5 md:flex-row md:mt-0">
                 <li><a href="/manifesto" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Manifesto</a>
                 </li>
                 <li><a href="/map" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Artist Map</a></li>
                 <li><a href="/story" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Our story</a></li>
+                <li id="toggleMode" class="text-xl text-semibold">
+                    <i class='bx bx-sun'></i>
+                </li>
             </ul>
         </nav>
-        <div id="toggleMobile" class="absolute top-5 right-4 text-2xl md:hidden cursor-pointer">
+        <div id="toggleMobile" class="absolute top-0.5 right-2 text-2xl md:hidden cursor-pointer">
             <i class='bx bx-menu'></i>
         </div>
     </header>
@@ -120,10 +124,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
-    $("#click").click(() => {
-        $("body").toggleClass("dark");
-    })
-
     $("#toggleMobile").click(() => {
         $("#menu").toggleClass("hidden flex");
 
@@ -131,6 +131,15 @@
             $("#toggleMobile").empty().append(`<i class="bx bx-x"></i>`)
         else
             $("#toggleMobile").empty().append(`<i class='bx bx-menu'></i>`)
+    })
+
+    $("#toggleMode").click(() => {
+        if ($("#toggleMode").html().toString().trim() == `<i class="bx bx-sun"></i>`)
+            $("#toggleMode").empty().append(`<i class="bx bxs-moon"></i>`)
+        else
+            $("#toggleMode").empty().append(`<i class="bx bx-sun"></i>`)
+
+        $("body").toggleClass("dark");
     })
 </script>
 
