@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .mode {
+    @apply bg-container dark:bg-darkContainer dark:text-zinc-100;
+  }
+
+  .btn {
+    @apply p-4 rounded-md m-5 bg-primary dark:bg-white;
+  }
+}
