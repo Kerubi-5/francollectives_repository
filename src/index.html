@@ -14,6 +14,8 @@
 </head>
 
 <body class="dark font-intro">
+
+    <!-- header -->
     <header class="bg-container text-gray-500 dark:bg-darkContainer dark:text-gray-400 fixed top-0 z-50 w-full">
         <nav class="container mx-auto md:flex md:justify-between items-center">
             <a class="w-44 hover:scale-110 transition-all duration-300" href="/">
@@ -34,10 +36,12 @@
             <i class='bx bx-menu'></i>
         </div>
     </header>
+
     <div class="bg-body dark:bg-darkBody">
         <div class="mb-5 text-center">
+
+            <!-- landing page, tagline -->
             <div class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <!-- TODO: tagline on hover -->
                 <div class="group">
                     <div
                         class="relative mx-auto pt-5 w-10 h-20 md:h-36 md:w-32 group-hover:scale-110 transition-all duration-300 md:mb-10">
@@ -54,8 +58,7 @@
                         <p class="group-hover:text-emerald-400 transition-all duration-1000 "> S </p>
                         <p class="group-hover:text-pink-400 transition-all duration-1000"> h </p>
                         <p class="group-hover:text-amber-500 transition-all duration-700"> o </p>
-                        <p class="group-hover:text-purple-700 mr-1 md:mr-2 lg:mr-4 xl:mr-7 transition-all duration-700">
-                            w </p>
+                        <p class="group-hover:text-purple-700 mr-1 md:mr-2 lg:mr-4 xl:mr-7 transition-all duration-700"> w </p>
                         <p class="group-hover:text-green-400 transition-all duration-700"> y </p>
                         <p class="group-hover:text-red-600 transition-all duration-300"> o </p>
                         <p class="group-hover:text-cyan-300 transition-all duration-300"> u </p>
@@ -64,10 +67,7 @@
                         <p class="group-hover:text-cyan-500 transition-all duration-100"> t </p>
                         <p class="group-hover:text-green-600 transition-all duration-100"> r </p>
                         <p class="group-hover:text-yellow-300 transition-all duration-100"> u </p>
-                        <p
-                            class="group-hover:text-emerald-400 mr-1 md:mr-2 lg:mr-4 xl:mr-7 transition-all duration-100">
-                            e </p>
-
+                        <p class="group-hover:text-emerald-400 mr-1 md:mr-2 lg:mr-4 xl:mr-7 transition-all duration-100"> e </p>
                         <p class="group-hover:text-pink-400 transition-all duration-300"> c </p>
                         <p class="group-hover:text-amber-500 transition-all duration-300"> o </p>
                         <p class="group-hover:text-purple-700 transition-all duration-700"> l </p>
@@ -84,7 +84,44 @@
             <video class="object-cover h-screen w-screen " src="./assets/video.mp4" autoplay muted loop></video>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="w-screen absolute -bottom-36 content-center dark:bg-darkContainer bg-white p-6 text-center">
+        <h1 class="dark:text-yellow-300 text-gray-500">Contact Us.</h1>
+        <div class="mt-2 pb-10">
+            <div class="flex items-center justify-center gap-4">
+
+                <!-- facebook icon -->
+                <svg fill="#000000" 
+                    xmlns="http://www.w3.org/2000/svg"  
+                    viewBox="0 0 50 50" 
+                    width="40px" height="40px">    
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/>
+                </svg>
+
+                <!-- instagram icon -->
+                <svg fill="#000000" 
+                    xmlns="http://www.w3.org/2000/svg"  
+                    viewBox="0 0 50 50" 
+                    width="40px" height="40px">
+                    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/>
+                </svg>
+
+                <!-- instagram icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 48 48" 
+                    width="44px" height="44px">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" 
+                        d="M 28 22.039062 C 26.960938 22.039062 26.121094 23.101562 26.121094 24.398438 C 26.121094 25.699219 26.960938 26.761719 28 26.761719 C 29.039062 26.761719 29.878906 25.699219 29.878906 24.398438 C 29.878906 23.101562 29.039062 22.039062 28 22.039062 Z M 20 22.039062 C 18.960938 22.039062 18.121094 23.101562 18.121094 24.398438 C 18.121094 25.699219 18.960938 26.761719 20 26.761719 C 21.039062 26.761719 21.878906 25.699219 21.878906 24.398438 C 21.878906 23.101562 21.039062 22.039062 20 22.039062 Z M 28 22.039062 C 26.960938 22.039062 26.121094 23.101562 26.121094 24.398438 C 26.121094 25.699219 26.960938 26.761719 28 26.761719 C 29.039062 26.761719 29.878906 25.699219 29.878906 24.398438 C 29.878906 23.101562 29.039062 22.039062 28 22.039062 Z M 20 22.039062 C 18.960938 22.039062 18.121094 23.101562 18.121094 24.398438 C 18.121094 25.699219 18.960938 26.761719 20 26.761719 C 21.039062 26.761719 21.878906 25.699219 21.878906 24.398438 C 21.878906 23.101562 21.039062 22.039062 20 22.039062 Z M 36 6 L 12 6 C 8.679688 6 6 8.679688 6 12 L 6 36 C 6 39.320312 8.679688 42 12 42 L 34 42 L 33.238281 39.179688 L 39.261719 45.238281 C 40.28125 46.261719 42 45.539062 42 44.121094 L 42 12 C 42 8.679688 39.320312 6 36 6 Z M 35.140625 29.480469 C 32.398438 31.980469 28.820312 32 28.820312 32 L 27.960938 30.839844 C 28.839844 30.539062 29.601562 30.140625 30.378906 29.539062 L 30.199219 29.058594 C 28.761719 29.71875 26.898438 30.121094 24 30.121094 C 21.101562 30.121094 19.238281 29.71875 17.800781 29.058594 L 17.621094 29.539062 C 18.398438 30.140625 19.160156 30.539062 20.039062 30.839844 L 19.179688 32 C 19.179688 32 15.601562 31.980469 12.859375 29.480469 C 12.421875 29.078125 12.238281 28.460938 12.28125 27.878906 C 12.78125 22.101562 14.558594 18.601562 15.199219 17.519531 C 15.339844 17.261719 15.539062 17.058594 15.78125 16.878906 C 16.539062 16.378906 18.441406 15.261719 20.78125 15.019531 L 21.378906 16.238281 C 22.238281 16.078125 23.179688 15.960938 24 15.960938 C 24.800781 15.960938 25.71875 16.078125 26.621094 16.238281 L 27.21875 15.019531 C 29.460938 15.199219 31.441406 16.359375 32.21875 16.878906 C 32.460938 17.058594 32.660156 17.261719 32.800781 17.519531 C 33.441406 18.621094 35.21875 22.101562 35.71875 27.878906 C 35.761719 28.460938 35.578125 29.078125 35.140625 29.480469 Z M 28 22.039062 C 26.960938 22.039062 26.121094 23.101562 26.121094 24.398438 C 26.121094 25.699219 26.960938 26.761719 28 26.761719 C 29.039062 26.761719 29.878906 25.699219 29.878906 24.398438 C 29.878906 23.101562 29.039062 22.039062 28 22.039062 Z M 20 22.039062 C 18.960938 22.039062 18.121094 23.101562 18.121094 24.398438 C 18.121094 25.699219 18.960938 26.761719 20 26.761719 C 21.039062 26.761719 21.878906 25.699219 21.878906 24.398438 C 21.878906 23.101562 21.039062 22.039062 20 22.039062 Z M 20 22.039062 "/>
+                </svg>
+            </div>
+        </div>
+    </footer> 
+
 </body>
+
+<!-- dark || light mode js -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
