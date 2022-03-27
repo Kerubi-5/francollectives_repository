@@ -15,6 +15,7 @@
 
 <body class="dark font-intro">
 
+    <!-- TODO: header, excess width, edit the video for opacity -->
     <!-- header -->
     <header class="bg-container/60 text-black dark:bg-darkContainer/70 dark:text-gray-400 fixed top-0 z-50 w-full py-2">
         <nav class="container mx-auto md:flex md:justify-between items-center">
@@ -43,8 +44,7 @@
     <main>
         <!-- TODO: hover on phone -->
         <div class="bg-body dark:bg-darkBody h-screen">
-            <div class="absolute bg-black/75 h-screen w-screen">
-            </div>
+            <!-- <div class="absolute bg-black/75 h-screen"></div> -->
             <video class="object-cover h-screen w-screen" src="./assets/video.mp4" autoplay muted loop></video>
             <div class="mb-5 text-center">
                 <!-- landing page, tagline -->
@@ -151,13 +151,24 @@
         </div>
 
         <!-- footer note -->
-        <div class="font-extralight mt-32 dark:text-white">
-            <p>Logo, (c). All Rights Reserved || Francollective by Franco Dubini</p>
+        <div class="font-extralight mt-32 dark:text-white flex justify-center place-items-center">
+            <div><img class="w-9" src="./assets/franc_logo_black.png" alt="Francollectives Logo"></div> 
+            <div><p>&nbsp; ©. All Rights Reserved | Francollective</p></div>
         </div>
 
     </footer> 
 
 </body>
+
+
+
+
+
+
+
+
+
+
 
 <!-- dark || light mode js -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
