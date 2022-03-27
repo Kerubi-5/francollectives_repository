@@ -21,16 +21,17 @@
     <header
         class="bg-container/60 text-black dark:bg-darkContainer/70 dark:text-gray-400 fixed top-0 z-50 w-screen py-2">
         <nav class="px-2 mx-auto md:flex md:justify-between items-center">
-            <a class="w-44 hover:scale-110 transition-all duration-300" href="/">
+            <!-- * ADDS HREF ID ON ANCHOR TAGS -->
+            <a class="w-44 hover:scale-110 transition-all duration-300" href="#">
                 <!-- TODO: Change logo to black -->
                 <img class="w-44 object-cover" src="./assets/francollective_multicolor1.png" alt="Francollective Logo">
             </a>
             <ul id="menu"
                 class="hidden items-center md:flex flex-col gap-10 py-4 px-4 uppercase mt-5 md:flex-row md:mt-0">
-                <li><a href="/manifesto" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Manifesto</a>
+                <li><a href="#manifesto" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Manifesto</a>
                 </li>
-                <li><a href="/map" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Artist Map</a></li>
-                <li><a href="/story" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Our story</a></li>
+                <li><a href="#map" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Artist Map</a></li>
+                <li><a href="#story" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Our story</a></li>
                 <li id="toggleMode" class="text-xl text-semibold cursor-pointer">
                     <i class='bx bx-sun'></i>
                 </li>
@@ -46,7 +47,7 @@
 
     <main>
         <!-- TODO: hover on phone -->
-        <div class="bg-body dark:bg-darkBody h-screen">
+        <section class="bg-body dark:bg-darkBody h-screen">
             <!-- <div class="absolute bg-black/75 h-screen"></div> -->
             <video class="object-cover h-screen w-screen" src="./assets/video.mp4" autoplay muted loop></video>
             <div class="mb-5 text-center">
@@ -95,16 +96,16 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Gamified Map -->
         <!-- * REMOVES EXCESS h1 Size -->
-        <div class="h-screen bg-red-300 text-center">
+        <section id="map" class="h-screen bg-red-300 text-center">
             <h1 class="lg:text-9xl">PARA SA GAMIFIED MAP</h1>
-        </div>
+        </section>
 
         <!-- Footer Tagline -->
-        <div class="bg-yellow-300 h-screen grid place-items-center">
+        <section id="story" class="bg-yellow-300 h-screen grid place-items-center">
 
             <!-- <img class=" w-40 bg" src="./assets/franc_logo_black.png" alt="Francollectives Logo"> -->
 
@@ -118,7 +119,7 @@
                     join us
                 </button>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
