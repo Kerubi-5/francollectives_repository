@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./styles/jquery-jvectormap-2.0.5.css">
     <title>Francollective</title>
     <!-- ICON -->
     <link rel="icon" type="image/png" sizes="180x180" href="./assets/franc_logo.png">
@@ -100,8 +101,10 @@
 
         <!-- Gamified Map -->
         <!-- * REMOVES EXCESS h1 Size -->
-        <section id="map" class="h-screen bg-red-300 text-center">
-            <h1 class="lg:text-9xl">PARA SA GAMIFIED MAP</h1>
+        <section id="map" class="h-screen dark:bg-darkBody text-center">
+            <section id="world-map" class="w-full h-1/2 mx-auto">
+
+            </section>
         </section>
 
         <!-- Footer Tagline -->
@@ -223,6 +226,9 @@
 <!-- dark || light mode js -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/jquery-jvectormap-2.0.5.min.js"></script>
+<script src="./js/jquery-jvectormap-continents-merc.js"></script>
+<script src="./js/jvectormap.js"></script>
 <script>
     $("#toggleMobile").click(() => {
         $("#menu").toggleClass("hidden flex");
