@@ -16,9 +16,11 @@
 <body class="dark font-intro">
 
     <!-- TODO: header, excess width, edit the video for opacity -->
+    <!-- * FIXED HEADER SIZE -->
     <!-- header -->
-    <header class="bg-container/60 text-black dark:bg-darkContainer/70 dark:text-gray-400 fixed top-0 z-50 w-full py-2">
-        <nav class="container mx-auto md:flex md:justify-between items-center">
+    <header
+        class="bg-container/60 text-black dark:bg-darkContainer/70 dark:text-gray-400 fixed top-0 z-50 w-screen py-2">
+        <nav class="px-2 mx-auto md:flex md:justify-between items-center">
             <a class="w-44 hover:scale-110 transition-all duration-300" href="/">
                 <!-- TODO: Change logo to black -->
                 <img class="w-44 object-cover" src="./assets/francollective_multicolor1.png" alt="Francollective Logo">
@@ -34,7 +36,8 @@
                 </li>
             </ul>
         </nav>
-        <div id="toggleMobile" class="absolute top-0.5 right-2 text-2xl md:hidden cursor-pointer">
+        <!-- * FIXES TOP POSITIONING -->
+        <div id="toggleMobile" class="absolute top-2 right-2 text-2xl md:hidden cursor-pointer">
             <i class='bx bx-menu'></i>
         </div>
     </header>
@@ -95,8 +98,9 @@
         </div>
 
         <!-- Gamified Map -->
+        <!-- * REMOVES EXCESS h1 Size -->
         <div class="h-screen bg-red-300 text-center">
-            <h1 class="text-9xl">PARA SA GAMIFIED MAP</h1>
+            <h1 class="lg:text-9xl">PARA SA GAMIFIED MAP</h1>
         </div>
 
         <!-- Footer Tagline -->
