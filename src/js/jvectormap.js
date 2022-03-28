@@ -34,9 +34,6 @@ $("#world-map").vectorMap({
       </div>
     `);
   },
-  onRegionOver: function (e, code) {
-    console.log(e);
-  },
 });
 
 const continentData = {
