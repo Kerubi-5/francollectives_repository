@@ -1,6 +1,6 @@
 $("#world-map").vectorMap({
   map: "continents_merc",
-  backgroundColor: "#0D0C0C",
+  // backgroundColor: "#0D0C0C",
   zoomOnScroll: false,
   regionStyle: {
     hover: {
