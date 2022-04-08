@@ -1,11 +1,21 @@
 $("#world-map").vectorMap({
   map: "continents_merc",
-  backgroundColor: "#0D0C0C",
+  backgroundColor: "transparent",
+  zoomButtons: false,
   zoomOnScroll: false,
   regionStyle: {
+    initial: {
+      fill: "white",
+      "fill-opacity": 1,
+      stroke: "white",
+      "stroke-width": 0.0,
+      "stroke-opacity": 1,
+    },
     hover: {
       "fill-opacity": 0.7,
+      "stroke-width": 0.0,
     },
+    selectedHover: {},
   },
   series: {
     regions: [
