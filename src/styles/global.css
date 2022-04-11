@@ -20,7 +20,7 @@
 
 @layer utilities {
   .tracking-tagline-xl {
-    letter-spacing: -1rem;
+    letter-spacing: -0.5rem;
   }
 
   .tracking-tagline-lg {

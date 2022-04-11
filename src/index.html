@@ -21,23 +21,23 @@
     <!-- TODO: header, excess width, edit the video for opacity -->
     <!-- * FIXED HEADER SIZE -->
     <!-- header -->
-    <header
-        class="bg-container/60 text-black dark:bg-darkContainer/70 dark:text-gray-400 fixed top-0 z-50 w-screen py-2">
-        <nav class="px-2 mx-auto md:flex md:justify-between items-center">
+    <header class="bg-darkBody text-white fixed top-0 z-50 w-screen py-1">
+        <nav class="px-5 mx-auto md:flex md:justify-between items-center">
             <!-- * ADDS HREF ID ON ANCHOR TAGS -->
-            <a class="w-44 hover:scale-110 transition-all duration-300" href="#">
+            <a class="hover:scale-110 transition-all duration-300" href="#">
                 <!-- TODO: Change logo to black -->
-                <img class="w-44 object-cover" src="./assets/francollective_multicolor1.png" alt="Francollective Logo">
+                <img class="w-48 object-cover" src="./assets/francollective_multicolor1.png" alt="Francollective Logo">
             </a>
-            <ul id="menu"
-                class="hidden items-center md:flex flex-col gap-10 py-4 px-4 uppercase mt-5 md:flex-row md:mt-0">
-                <li><a href="#manifesto" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Manifesto</a>
+
+
+            <ul id="menu" class="hidden items-center md:flex flex-col gap-10 py-4 px-4 uppercase mt-5 md:flex-row md:mt-0 text-sm">
+                <li><a href="#manifesto" class="hover:border-b-4 border-b-gray-400 py-4">Manifesto</a>
                 </li>
-                <li><a href="#map" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Artist Map</a></li>
-                <li><a href="#story" class="hover:border-b-4 border-b-gray-400 py-4 font-semibold">Our story</a></li>
-                <li id="toggleMode" class="text-xl text-semibold cursor-pointer">
+                <li><a href="#map" class="hover:border-b-4 border-b-gray-400 py-4">Artist Map</a></li>
+                <li><a href="#story" class="hover:border-b-4 border-b-gray-400 py-4">Our story</a></li>
+                <!-- <li id="toggleMode" class="text-xl text-semibold cursor-pointer">
                     <i class='bx bx-sun'></i>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <!-- * FIXES TOP POSITIONING -->
@@ -60,16 +60,14 @@
                     <div class="group">
 
                         <!-- Francollective logo on hover -->
-                        <div
-                            class="relative mx-auto pt-5 w-10 h-20 md:h-36 md:w-32 group-hover:scale-110 transition-all duration-300 md:mb-10">
+                        <div class="relative mx-auto pt-5 w-10 h-20 md:h-16 md:w-20 group-hover:scale-110 transition-all duration-300 md:mb-10">
                             <img class="absolute opacity-100 group-hover:opacity-0 transition-all duration-300"
                                 src="./assets/franc_logo_hover.png" alt="Francollectives Logo">
                             <img class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300"
                                 src="./assets/franc_logo.png" alt="Francollectives Logo">
                         </div>
 
-                        <div class="flex flex-row text-justify whitespace-nowrap uppercase text-2xl xl:text-8xl lg:text-7xl md:text-5xl font-bold text-alt group-hover:scale-110 transition-all duration-300 xl:tracking-tagline-xl lg:tracking-tagline-lg md:tracking-tagline-md tracking-tagline"
-                            id="header-tagline">
+                        <div class="flex flex-row text-justify whitespace-nowrap uppercase text-2xl xl:text-6xl lg:text-7xl md:text-5xl font-bold text-alt group-hover:scale-110 transition-all duration-300 xl:tracking-tagline-xl lg:tracking-tagline-lg md:tracking-tagline-md tracking-tagline" id="header-tagline">
                             <p class="group-hover:text-emerald-400 transition-all duration-1000 "> S </p>
                             <p class="group-hover:text-pink-400 transition-all duration-1000"> h </p>
                             <p class="group-hover:text-amber-500 transition-all duration-700"> o </p>
@@ -103,37 +101,15 @@
 
         <!-- Gamified Map -->
         <!-- * REMOVES EXCESS h1 Size -->
-        <!-- <section id="map" class="h-screen dark:bg-darkBody text-center"> -->
-            <section id="world-map" class="w-full h-screen mx-auto py-5 bg-gradient-to-r from-blue-400 to-emerald-400 dark:from-sky-400 dark:to-blue-500">
+        <section id="world-map" class="w-full h-screen mx-auto py-5 bg-gradient-to-b from-yellow-300 via-gray-600 to-darkContainer">
 
-            </section>
-        <!-- </section> -->
-
-        
-        <!-- TODO: screen size response -->
-        <!-- Footer Tagline 
-        <section id="story" class="bg-yellow-300 h-screen grid place-items-center">
-
-            <div class="container w-3/4 text-center -top-10">
-                <h1 class="uppercase text-2xl xl:text-8xl lg:text-7xl md:text-5xl font-extrabold gap-3">Let's color the
-                    world together.</h1>
-
-                
-                <form class="w-full">
-                    <h1 class="dark:text-yellow-300 font-medium mb-5 text-left uppercase">Share your story</h1>
-                        <textarea class=" text-wrap bg-gray-200 border-2 border-slate-700 rounded w-full h-52 py-2 px-4 type="text" placeholder="Write something..."></textarea>
-                        <button class="uppercase w-4/12 xl:w-3/12 lg:w-4/12 mt-10 p-3 font-bold transition-all duration-150 transform text-white bg-darkBody hover:bg-yellow-400 hover:border-2 hover:border-opacity-100 border-black hover:text-black text-sm xl:text-2xl rounded-md">
-                            Send
-                        </button>
-                </form>
-            </div>
         </section>
-        -->
+
 
     </main>
 
     <!-- Footer -->
-    <footer class="content-center dark:bg-darkContainer bg-white p-10 text-center">
+    <footer class="content-center bg-darkContainer p-10 text-center">
         <!-- * FIX: Centers footer elements -->
         <div class="grid">
             <div class="">
@@ -143,7 +119,7 @@
 
                         <!-- facebook colored icon -->
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="35px" height="35px">
                                 <path fill="#3F51B5"
                                     d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z" />
                                 <path fill="#FFF"
@@ -153,7 +129,7 @@
 
                         <!-- instagram colored icon -->
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="35px" height="35px">
                                 <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
                                     gradientUnits="userSpaceOnUse">
                                     <stop offset="0" stop-color="#fd5" />
@@ -183,7 +159,7 @@
 
                         <!-- discord colored icon -->
                         <a href="https://discord.gg/uvadg9aZ">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="35px" height="35px">
                                 <path fill="#8c9eff"
                                     d="M42,45l-9-7.001L34,41H10c-2.761,0-5-2.238-5-5V10c0-2.762,2.239-5,5-5h27c2.762,0,5,2.238,5,5V45z" />
                                 <path fill="#fff"
@@ -198,14 +174,12 @@
 
         <!-- footer note -->
         <div class="font-extralight dark:text-white flex justify-center place-items-center mt-14">
-            <div><img class="w-9" src="./assets/franc_logo_black.png" alt="Francollectives Logo"></div>
+            <div><img class="w-7" src="./assets/franc_logo_black.png" alt="Francollectives Logo"></div>
             <div>
                 <p>&nbsp; ©. All Rights Reserved | Francollective</p>
             </div>
         </div>
-
     </footer>
-
 </body>
 
 <!-- dark || light mode js -->
@@ -214,7 +188,10 @@
 <script src="./js/jquery-jvectormap-2.0.5.min.js"></script>
 <script src="./js/jquery-jvectormap-continents-merc.js"></script>
 <script src="./js/jvectormap.js"></script>
+
 <script>
+
+    // Mobile toogle
     $("#toggleMobile").click(() => {
         $("#menu").toggleClass("hidden flex");
 
@@ -223,7 +200,9 @@
         else
             $("#toggleMobile").empty().append(`<i class='bx bx-menu'></i>`)
     })
+</script>
 
+<!--
     $("#toggleMode").click(() => {
         if ($("#toggleMode").html().toString().trim() == `<i class="bx bx-sun"></i>`)
             $("#toggleMode").empty().append(`<i class="bx bxs-moon"></i>`)
@@ -234,17 +213,17 @@
     })
 
 
-    // * EVENT HANDLER FOR REMOVING STROKE ON HOVER
-    // const mouseEnter = () => {
-    //     $("#header-tagline").removeClass("stroke-1px")
-    // }
+    * EVENT HANDLER FOR REMOVING STROKE ON HOVER
+    const mouseEnter = () => {
+        $("#header-tagline").removeClass("stroke-1px")
+    }
 
-    // const mouseLeave = () => {
-    //     $("#header-tagline").addClass("stroke-1px")
-    // }
+    const mouseLeave = () => {
+        $("#header-tagline").addClass("stroke-1px")
+    }
 
-    // $("#header-tagline").hover(mouseEnter, mouseLeave)
+    $("#header-tagline").hover(mouseEnter, mouseLeave)
 
-</script>
+</script> -->
 
 </html>
