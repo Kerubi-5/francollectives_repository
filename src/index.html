@@ -22,7 +22,7 @@
     <!-- * FIXED HEADER SIZE -->
     <!-- header -->
     <header
-        class="bg-container/60 text-black dark:bg-darkContainer/70 dark:text-gray-400 fixed top-0 z-50 w-screen py-2">
+        class="bg-darkBody text-black fixed top-0 z-50 w-screen py-2">
         <nav class="px-2 mx-auto md:flex md:justify-between items-center">
             <!-- * ADDS HREF ID ON ANCHOR TAGS -->
             <a class="w-44 hover:scale-110 transition-all duration-300" href="#">
@@ -103,7 +103,7 @@
 
         <!-- Gamified Map -->
         <!-- * REMOVES EXCESS h1 Size -->
-        <section id="world-map" class="w-full h-screen mx-auto py-5 bg-gradient-to-r from-blue-400 to-emerald-400 dark:from-sky-400 dark:to-blue-500">
+        <section id="world-map" class="w-full h-screen mx-auto py-5">
 
         </section>
 
@@ -111,7 +111,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="content-center dark:bg-darkContainer bg-white p-10 text-center">
+    <footer class="content-center bg-darkBody p-10 text-center">
         <!-- * FIX: Centers footer elements -->
         <div class="grid">
             <div class="">
@@ -181,9 +181,7 @@
                 <p>&nbsp; ©. All Rights Reserved | Francollective</p>
             </div>
         </div>
-
     </footer>
-
 </body>
 
 <!-- dark || light mode js -->
@@ -192,10 +190,7 @@
 <script src="./js/jquery-jvectormap-2.0.5.min.js"></script>
 <script src="./js/jquery-jvectormap-continents-merc.js"></script>
 <script src="./js/jvectormap.js"></script>
-
-
-<!--  JS for light || dark mode
-<script>
+<!-- <script>
     $("#toggleMobile").click(() => {
         $("#menu").toggleClass("hidden flex");
 
